@@ -1,18 +1,23 @@
 
 
 
-Cypress.Commands.add('nakdanLiveRequest',({status=200,message='',delaySeconds=0})=>{
-  cy.intercept('POST', '/api', {
+Cypress.Commands.add('nakdanLiveRequest',({url,status=200,message='',delaySeconds=0})=>{
+  cy.intercept('POST', url, {
     delayMs:1000*delaySeconds,
     statusCode: status
-  }).as('api')
+  })
   if(message.length>0){
     cy.contains(message).should('not.exist')
   }
   cy.get('[placeholder="הזן טקסט כאן"]').type('מש')
   
+  if(delaySeconds>0){
+    cy.get('[class*=spinner]',{timeout:1000*delaySeconds}).should('not.exist')
+  }else{
+    cy.get('[class*=spinner]').should('not.exist')
+  }
   if(message.length>0){
-    cy.contains(message,{timeout:1000*delaySeconds+30000}).should('exist')
+    cy.contains(message).should('exist')
   }
 })   
   
