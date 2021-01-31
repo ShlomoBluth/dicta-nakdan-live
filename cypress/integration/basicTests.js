@@ -8,7 +8,7 @@ describe('basicTests',()=>{
         cy.visit('https://nakdanlive.dicta.org.il/')
     })
     
-    it('Modern nakdan',()=>{
+    it('Nakdan live run',()=>{
         cy.get('[placeholder="הזן טקסט כאן"]').type('משה')
         cy.get('[id="nikud-text"]').should('contain','מֹשֶׁה')
     })
