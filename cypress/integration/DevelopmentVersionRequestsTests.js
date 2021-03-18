@@ -14,7 +14,7 @@ describe('DevelopmentVersionRequestsTests',()=>{
     ' of nakdan live page',()=>{
       cy.nakdanLiveRequest({
         url:'api',
-        message:'לא ניתן לגשת כעת לשרת, נסה שוב מאוחר יותר',
+        message:'חיבור אינטרנט חלש, ייתכנו שיבושים במהלך הניקוד',
         delaySeconds:60*3
       })
     })
@@ -25,7 +25,7 @@ describe('DevelopmentVersionRequestsTests',()=>{
       cy.nakdanLiveRequest({
         url:'api',
         status:500,
-        message:'לא ניתן לגשת כעת לשרת, נסה שוב מאוחר יותר'
+        message:'חיבור אינטרנט חלש, ייתכנו שיבושים במהלך הניקוד'
       })
     })
       

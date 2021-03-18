@@ -7,7 +7,7 @@ Cypress.Commands.add('nakdanLiveRequest',({url,status=200,message='',delaySecond
     statusCode: status
   })
   if(message.length>0){
-    cy.contains(message).should('not.exist')
+    cy.get('small').contains(message).should('not.exist')
   }
   cy.get('[placeholder="הזן טקסט כאן"]').type('מש')
   
@@ -17,7 +17,7 @@ Cypress.Commands.add('nakdanLiveRequest',({url,status=200,message='',delaySecond
     cy.get('[class*=spinner]').should('not.exist')
   }
   if(message.length>0){
-    cy.contains(message).should('exist')
+    cy.get('small').contains(message).should('exist')
   }
 })   
   
