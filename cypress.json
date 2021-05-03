@@ -1,5 +1,10 @@
 {
     "projectId": "if6x7a",
     "screenshotOnRunFailure": false,
-    "defaultCommandTimeout": 30000
+    "defaultCommandTimeout": 30000,
+    "baseUrl":"https://dev--nakdanlive.netlify.app/",
+    "reporter": "cypress-multi-reporters",
+    "reporterOptions": {
+        "configFile": "reporter-config.json"
+    }
 }
