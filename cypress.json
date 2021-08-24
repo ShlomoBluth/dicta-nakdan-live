@@ -5,6 +5,11 @@
     "baseUrl":"https://dev--nakdanlive.netlify.app/",
     "reporter": "cypress-multi-reporters",
     "reporterOptions": {
-        "configFile": "reporter-config.json"
+        "configFile": "dicta-shared/reporter-config.json"
+    },
+    "env":{
+        "TOOL_TESTS":true,
+        "REQUESTS_TESTS":true,
+        "RECORD_KEY":"bb3977f6-0a80-4de1-98d3-89009fb84af6"
     }
 }
