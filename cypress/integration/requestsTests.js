@@ -2,41 +2,49 @@
 
 //run tests on requests from nakdan live run
 
-let sizes = ['iphone-x',[1000, 660]]
+const urls = new Map();
+urls.set('live',Cypress.env('LIVE_URL'))
+urls.set('dev',Cypress.env('DEV_URL')) 
+
+const sizes= new Map();
+sizes.set('desktop',[1000, 660])
+sizes.set('mobile','iphone-x')
 
 
+urls.forEach((urlValue,urlKey)=>{
 
-sizes.forEach((size) => {
-
-  describe('requestsTests',()=>{
+  sizes.forEach((sizeValue,sizeKey) => {
 
     
-    beforeEach(() => {
-      cy.screenSize({size:size})
-      cy.visitpage({url:'https://nakdanlive.dicta.org.il/'})
-    })
-  
-  
-    it('Error message for response with a delay of 3 minutes when clicking the run button'+
-    ' of nakdan live page',()=>{
-      cy.nakdanLiveRequest({
-        url:'api',
-        message:'חיבור אינטרנט חלש, ייתכנו שיבושים במהלך הניקוד',
-        delaySeconds:60*3
+    describe('toolTests '+urlKey+' '+sizeKey,()=>{
+    
+      beforeEach(() => {
+        cy.screenSize({size:sizeValue})
+        cy.visitpage({url:urlValue})
       })
-    })
+  
+  
+      it('Error message for response with a delay of 3 minutes when clicking the run button'+
+      ' of nakdan live page',()=>{
+        cy.nakdanLiveRequest({
+          url:'api',
+          message:'חיבור אינטרנט חלש, ייתכנו שיבושים במהלך הניקוד',
+          delaySeconds:60*3
+        })
+      })
   
     
-    it('Error message for response with status code 500 when clicking the run button of nakdan live page'
-    ,()=>{
-      cy.nakdanLiveRequest({
-        url:'api',
-        status:500,
-        message:'חיבור אינטרנט חלש, ייתכנו שיבושים במהלך הניקוד'
+      it('Error message for response with status code 500 when clicking the run button of nakdan live page'
+      ,()=>{
+        cy.nakdanLiveRequest({
+          url:'api',
+          status:500,
+          message:'חיבור אינטרנט חלש, ייתכנו שיבושים במהלך הניקוד'
+        })
       })
-    })
-      
+
+
+    })      
   })
-
 })
 

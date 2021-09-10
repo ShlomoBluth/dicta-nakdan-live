@@ -8,6 +8,8 @@
         "configFile": "dicta-shared/reporter-config.json"
     },
     "env":{
+        "DEV_URL":"https://dev--nakdanlive.netlify.app/",
+        "LIVE_URL":"https://nakdanlive.dicta.org.il/",
         "TOOL_TESTS":true,
         "REQUESTS_TESTS":true,
         "RECORD_KEY":"bb3977f6-0a80-4de1-98d3-89009fb84af6"
