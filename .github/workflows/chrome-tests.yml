@@ -11,23 +11,20 @@ jobs:
   cypress-e2e:
     name: Run on Chrome 89
     runs-on: ubuntu-latest
-    runs-on: buildjet-16vcpu-ubuntu-2004
-    strategy:
-      matrix:
-        program: ${{ fromJson(inputs.program_matrix) }}
+    
 
-    container: 
-      image: cypress/browsers:node14.16.0-chrome89-ff86
-      options: --user 1001
+    # container: 
+    #   image: cypress/browsers:node14.16.0-chrome89-ff86
+    #   options: --user 1001
 
     steps:
 
-    - name: Free Disk Space (Ubuntu)
-      uses: jlumbroso/free-disk-space@main
-      with:
-        # this might remove tools that are actually needed,
-        # when set to "true" but frees about 6 GB
-        tool-cache: true
+    # - name: Free Disk Space (Ubuntu)
+    #   uses: jlumbroso/free-disk-space@main
+    #   with:
+    #     # this might remove tools that are actually needed,
+    #     # when set to "true" but frees about 6 GB
+    #     tool-cache: true
 
     - uses: actions/checkout@v1
       with:
