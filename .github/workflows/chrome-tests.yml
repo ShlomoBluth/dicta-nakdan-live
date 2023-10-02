@@ -12,6 +12,10 @@ jobs:
     name: Run on Chrome 89
     runs-on: ubuntu-latest
     runs-on: buildjet-16vcpu-ubuntu-2004
+    strategy:
+      matrix:
+        program: ${{ fromJson(inputs.program_matrix) }}
+
     container: 
       image: cypress/browsers:node14.16.0-chrome89-ff86
       options: --user 1001
