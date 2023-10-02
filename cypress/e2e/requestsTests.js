@@ -7,7 +7,7 @@ urls.set('live',Cypress.env('LIVE_URL'))
 urls.set('dev',Cypress.env('DEV_URL')) 
 
 const sizes= new Map();
-sizes.set('desktop',[1000, 660])
+//sizes.set('desktop',[1000, 660])
 sizes.set('mobile','iphone-x')
 
 
@@ -27,9 +27,9 @@ urls.forEach((urlValue,urlKey)=>{
       it('Error message for response with a delay of 3 minutes when clicking the run button'+
       ' of nakdan live page',()=>{
         cy.nakdanLiveRequest({
-          url:'api',
+          url:'https://update-nakdan-live.dicta.org.il/user-server/api',
           message:'חיבור אינטרנט חלש, ייתכנו שיבושים במהלך הניקוד',
-          delaySeconds:60*3
+          delaySeconds:60*10
         })
       })
   
