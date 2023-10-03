@@ -1,6 +1,6 @@
 const { defineConfig } = require('cypress')
 
-module.exports = defineConfig({
+export default defineConfig({
   video: true,
   projectId: 'if6x7a',
   screenshotOnRunFailure: false,
@@ -19,9 +19,9 @@ module.exports = defineConfig({
   e2e: {
     // We've imported your old cypress plugins here.
     // You may want to clean this up later by importing these.
-    // setupNodeEvents(on, config) {
-    //   return require('./cypress/plugins/index.js')(on, config)
-    // },
+    setupNodeEvents(on, config) {
+      return require('./cypress/plugins/index.js')(on, config)
+    },
     baseUrl: 'https://dev--nakdanlive.netlify.app/',
     specPattern: 'cypress/e2e/**/*.{js,jsx,ts,tsx}',
   },
