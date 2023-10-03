@@ -1,14 +1,14 @@
 const { defineConfig } = require('cypress')
 
-export default defineConfig({
+module.exports = defineConfig({
   video: true,
   projectId: 'if6x7a',
   screenshotOnRunFailure: false,
   defaultCommandTimeout: 600000,
   reporter: 'cypress-multi-reporters',
-  reporterOptions: {
-    configFile: 'dicta-shared/reporter-config.json',
-  },
+  // reporterOptions: {
+  //   configFile: 'dicta-shared/reporter-config.json',
+  // },
   env: {
     DEV_URL: 'https://dev--nakdanlive.netlify.app/',
     LIVE_URL: 'https://nakdanlive.dicta.org.il/',
