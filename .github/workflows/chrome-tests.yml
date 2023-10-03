@@ -40,13 +40,13 @@ jobs:
       run: |
         ls
         echo "TOOL_TESTS=$(grep TOOL_TESTS cypress.config.js | sed 's/TOOL_TESTS//' | sed 's/"//g' |sed 's/,//' | sed 's/://')" | tr -d ' ' >> $GITHUB_ENV
-        echo "REQUESTS_TESTS=$(grep REQUESTS_TESTS cypress.json | sed 's/REQUESTS_TESTS//' | sed 's/"//g' |sed 's/,//' | sed 's/://')" | tr -d ' ' >> $GITHUB_ENV 
+        echo "REQUESTS_TESTS=$(grep REQUESTS_TESTS cypress.config.js | sed 's/REQUESTS_TESTS//' | sed 's/"//g' |sed 's/,//' | sed 's/://')" | tr -d ' ' >> $GITHUB_ENV 
   
 
     - name: Run chrome tool tests
       run: |
         touch toolTest.log
-        toolTestsCommand='npx cypress run --browser chrome --spec ./cypress/integration/toolTests.js \
+        toolTestsCommand='npx cypress run --browser chrome --spec ./cypress/e2e/toolTests.js \
         --config trashAssetsBeforeRuns=false'
         if $toolTestsCommand >> toolTest.log
         then
@@ -71,7 +71,7 @@ jobs:
     - name: Run chrome requests tests
       run: |
         touch requestsTest.log
-        requestsTestsCommand='npx cypress run --browser chrome --spec ./cypress/integration/requestsTests.js \
+        requestsTestsCommand='npx cypress run --browser chrome --spec ./cypress/e2e/requestsTests.js \
         --config trashAssetsBeforeRuns=false'
         if $requestsTestsCommand >> requestsTest.log
         then
