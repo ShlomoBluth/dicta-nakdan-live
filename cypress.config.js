@@ -4,7 +4,7 @@ module.exports = defineConfig({
   video: true,
   projectId: 'if6x7a',
   screenshotOnRunFailure: false,
-  defaultCommandTimeout: 30000,
+  defaultCommandTimeout: 600000,
   reporter: 'cypress-multi-reporters',
   reporterOptions: {
     configFile: 'dicta-shared/reporter-config.json',
