@@ -1,0 +1,183 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-10-03T05:52:15.171Z",
+    "end": "2023-10-03T05:56:44.213Z",
+    "duration": 269042,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "110f114b-dc74-40b8-8fc3-e61c24f8408d",
+      "title": "",
+      "fullFile": "cypress\\e2e\\DevelopmentVersionRequestsTests.js",
+      "file": "cypress\\e2e\\DevelopmentVersionRequestsTests.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2dc56812-88a4-4e8a-9c9a-fb96d379ab9a",
+          "title": "DevelopmentVersionRequestsTests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Error message for response with a delay of 3 minutes when clicking the run button of nakdan live page",
+              "fullTitle": "DevelopmentVersionRequestsTests Error message for response with a delay of 3 minutes when clicking the run button of nakdan live page",
+              "timedOut": null,
+              "duration": 132903,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "\"videos/DevelopmentVersionRequestsTests.js.mp4\"",
+              "code": "cy.nakdanLiveRequest({\n  url: 'api',\n  message: 'חיבור אינטרנט חלש, ייתכנו שיבושים במהלך הניקוד',\n  delaySeconds: 60 * 3\n});",
+              "err": {},
+              "uuid": "0a704abd-2547-47ba-a219-14aef2ab819d",
+              "parentUUID": "2dc56812-88a4-4e8a-9c9a-fb96d379ab9a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Error message for response with status code 500 when clicking the run button of nakdan live page",
+              "fullTitle": "DevelopmentVersionRequestsTests Error message for response with status code 500 when clicking the run button of nakdan live page",
+              "timedOut": null,
+              "duration": 2683,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "\"videos/DevelopmentVersionRequestsTests.js.mp4\"",
+              "code": "cy.nakdanLiveRequest({\n  url: 'api',\n  status: 500,\n  message: 'חיבור אינטרנט חלש, ייתכנו שיבושים במהלך הניקוד'\n});",
+              "err": {},
+              "uuid": "14299974-ba66-4ebd-8c5f-c938bd881157",
+              "parentUUID": "2dc56812-88a4-4e8a-9c9a-fb96d379ab9a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0a704abd-2547-47ba-a219-14aef2ab819d",
+            "14299974-ba66-4ebd-8c5f-c938bd881157"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 135586,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "2f48f079-5f3d-4518-a1b4-763461d159e7",
+          "title": "DevelopmentVersionRequestsTests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Error message for response with a delay of 3 minutes when clicking the run button of nakdan live page",
+              "fullTitle": "DevelopmentVersionRequestsTests Error message for response with a delay of 3 minutes when clicking the run button of nakdan live page",
+              "timedOut": null,
+              "duration": 130791,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "\"videos/DevelopmentVersionRequestsTests.js.mp4\"",
+              "code": "cy.nakdanLiveRequest({\n  url: 'api',\n  message: 'חיבור אינטרנט חלש, ייתכנו שיבושים במהלך הניקוד',\n  delaySeconds: 60 * 3\n});",
+              "err": {},
+              "uuid": "37051076-b105-400e-93e1-608073b7d44f",
+              "parentUUID": "2f48f079-5f3d-4518-a1b4-763461d159e7",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Error message for response with status code 500 when clicking the run button of nakdan live page",
+              "fullTitle": "DevelopmentVersionRequestsTests Error message for response with status code 500 when clicking the run button of nakdan live page",
+              "timedOut": null,
+              "duration": 2225,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "\"videos/DevelopmentVersionRequestsTests.js.mp4\"",
+              "code": "cy.nakdanLiveRequest({\n  url: 'api',\n  status: 500,\n  message: 'חיבור אינטרנט חלש, ייתכנו שיבושים במהלך הניקוד'\n});",
+              "err": {},
+              "uuid": "022d6920-e099-4e70-a551-9dbbb9207ca3",
+              "parentUUID": "2f48f079-5f3d-4518-a1b4-763461d159e7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "37051076-b105-400e-93e1-608073b7d44f",
+            "022d6920-e099-4e70-a551-9dbbb9207ca3"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 133016,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/json",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

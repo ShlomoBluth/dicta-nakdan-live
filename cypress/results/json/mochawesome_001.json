@@ -1,0 +1,183 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-10-03T05:56:46.199Z",
+    "end": "2023-10-03T06:01:18.683Z",
+    "duration": 272484,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "9a2f1a43-26f1-4fd0-b783-777b5882c48c",
+      "title": "",
+      "fullFile": "cypress\\e2e\\requestsTests.js",
+      "file": "cypress\\e2e\\requestsTests.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2065966c-04d3-4394-be03-50dbbdfebcc0",
+          "title": "toolTests live mobile",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Error message for response with a delay of 3 minutes when clicking the run button of nakdan live page",
+              "fullTitle": "toolTests live mobile Error message for response with a delay of 3 minutes when clicking the run button of nakdan live page",
+              "timedOut": null,
+              "duration": 131524,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "\"videos/requestsTests.js.mp4\"",
+              "code": "cy.nakdanLiveRequest({\n  url: 'https://update-nakdan-live.dicta.org.il/user-server/api',\n  message: 'חיבור אינטרנט חלש, ייתכנו שיבושים במהלך הניקוד',\n  delaySeconds: 60 * 10\n});",
+              "err": {},
+              "uuid": "65372561-ce32-4e93-89ac-bdd67b91b1af",
+              "parentUUID": "2065966c-04d3-4394-be03-50dbbdfebcc0",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Error message for response with status code 500 when clicking the run button of nakdan live page",
+              "fullTitle": "toolTests live mobile Error message for response with status code 500 when clicking the run button of nakdan live page",
+              "timedOut": null,
+              "duration": 2718,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "\"videos/requestsTests.js.mp4\"",
+              "code": "cy.nakdanLiveRequest({\n  url: 'api',\n  status: 500,\n  message: 'חיבור אינטרנט חלש, ייתכנו שיבושים במהלך הניקוד'\n});",
+              "err": {},
+              "uuid": "0ae395a5-7d95-4f66-9920-767df0bf73dc",
+              "parentUUID": "2065966c-04d3-4394-be03-50dbbdfebcc0",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "65372561-ce32-4e93-89ac-bdd67b91b1af",
+            "0ae395a5-7d95-4f66-9920-767df0bf73dc"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 134242,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "ead50a07-e159-425a-8e12-37e9fcae5320",
+          "title": "toolTests dev mobile",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Error message for response with a delay of 3 minutes when clicking the run button of nakdan live page",
+              "fullTitle": "toolTests dev mobile Error message for response with a delay of 3 minutes when clicking the run button of nakdan live page",
+              "timedOut": null,
+              "duration": 130757,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "\"videos/requestsTests.js.mp4\"",
+              "code": "cy.nakdanLiveRequest({\n  url: 'https://update-nakdan-live.dicta.org.il/user-server/api',\n  message: 'חיבור אינטרנט חלש, ייתכנו שיבושים במהלך הניקוד',\n  delaySeconds: 60 * 10\n});",
+              "err": {},
+              "uuid": "07814383-3273-4605-96b6-3f88a3adbf69",
+              "parentUUID": "ead50a07-e159-425a-8e12-37e9fcae5320",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Error message for response with status code 500 when clicking the run button of nakdan live page",
+              "fullTitle": "toolTests dev mobile Error message for response with status code 500 when clicking the run button of nakdan live page",
+              "timedOut": null,
+              "duration": 2398,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "\"videos/requestsTests.js.mp4\"",
+              "code": "cy.nakdanLiveRequest({\n  url: 'api',\n  status: 500,\n  message: 'חיבור אינטרנט חלש, ייתכנו שיבושים במהלך הניקוד'\n});",
+              "err": {},
+              "uuid": "d4b86648-4557-4367-8b3b-9e8f0bb75eab",
+              "parentUUID": "ead50a07-e159-425a-8e12-37e9fcae5320",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "07814383-3273-4605-96b6-3f88a3adbf69",
+            "d4b86648-4557-4367-8b3b-9e8f0bb75eab"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 133155,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/json",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

@@ -1,0 +1,223 @@
+{
+  "stats": {
+    "suites": 4,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-10-03T07:29:21.346Z",
+    "end": "2023-10-03T07:29:27.287Z",
+    "duration": 5941,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "3701ada4-b5a5-4764-97cc-ec7bc88e6012",
+      "title": "",
+      "fullFile": "cypress\\e2e\\toolTests.js",
+      "file": "cypress\\e2e\\toolTests.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "92a27776-eb02-4751-93c2-9ce98f381764",
+          "title": "toolTests live desktop",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Nakdan live run",
+              "fullTitle": "toolTests live desktop Nakdan live run",
+              "timedOut": null,
+              "duration": 787,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "\"videos/toolTests.js.mp4\"",
+              "code": "cy.get('[placeholder=\"הזן טקסט כאן\"]').type('משה');\ncy.get('[id=\"nikud-text\"]').should('contain', 'מֹשֶׁה');",
+              "err": {},
+              "uuid": "70caa5f9-4eb3-4d3e-9a52-2e1bb9670b40",
+              "parentUUID": "92a27776-eb02-4751-93c2-9ce98f381764",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "70caa5f9-4eb3-4d3e-9a52-2e1bb9670b40"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 787,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "002cc842-868d-444b-aea2-67055ba27cc4",
+          "title": "toolTests live mobile",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Nakdan live run",
+              "fullTitle": "toolTests live mobile Nakdan live run",
+              "timedOut": null,
+              "duration": 777,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "\"videos/toolTests.js.mp4\"",
+              "code": "cy.get('[placeholder=\"הזן טקסט כאן\"]').type('משה');\ncy.get('[id=\"nikud-text\"]').should('contain', 'מֹשֶׁה');",
+              "err": {},
+              "uuid": "bed58151-e7d9-4c24-90fa-5c7a3a095254",
+              "parentUUID": "002cc842-868d-444b-aea2-67055ba27cc4",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "bed58151-e7d9-4c24-90fa-5c7a3a095254"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 777,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "6da71067-715d-4cb0-b01e-543cc7439a59",
+          "title": "toolTests dev desktop",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Nakdan live run",
+              "fullTitle": "toolTests dev desktop Nakdan live run",
+              "timedOut": null,
+              "duration": 555,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "\"videos/toolTests.js.mp4\"",
+              "code": "cy.get('[placeholder=\"הזן טקסט כאן\"]').type('משה');\ncy.get('[id=\"nikud-text\"]').should('contain', 'מֹשֶׁה');",
+              "err": {},
+              "uuid": "0c7d0e15-319d-4245-9222-20bee236c807",
+              "parentUUID": "6da71067-715d-4cb0-b01e-543cc7439a59",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0c7d0e15-319d-4245-9222-20bee236c807"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 555,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "9a9fe799-fd21-4211-be0e-5930ea031a54",
+          "title": "toolTests dev mobile",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Nakdan live run",
+              "fullTitle": "toolTests dev mobile Nakdan live run",
+              "timedOut": null,
+              "duration": 552,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "\"videos/toolTests.js.mp4\"",
+              "code": "cy.get('[placeholder=\"הזן טקסט כאן\"]').type('משה');\ncy.get('[id=\"nikud-text\"]').should('contain', 'מֹשֶׁה');",
+              "err": {},
+              "uuid": "a8ad2a53-f365-4802-bea2-24424b03dcfd",
+              "parentUUID": "9a9fe799-fd21-4211-be0e-5930ea031a54",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a8ad2a53-f365-4802-bea2-24424b03dcfd"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 552,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/json",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

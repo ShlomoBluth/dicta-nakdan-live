@@ -1,9 +1,10 @@
 const { defineConfig } = require('cypress')
 
 module.exports = defineConfig({
+  video: true,
   projectId: 'if6x7a',
   screenshotOnRunFailure: false,
-  defaultCommandTimeout: 600000,
+  defaultCommandTimeout: 30000,
   reporter: 'cypress-multi-reporters',
   reporterOptions: {
     configFile: 'dicta-shared/reporter-config.json',
