@@ -41,7 +41,7 @@ jobs:
     - name: Run edge tool tests
       run: |
         touch toolTest.log
-        toolTestsCommand='npx cypress run --browser edge --spec ./cypress/e2e/toolTests.js
+        toolTestsCommand='npx cypress run --browser edge --spec ./cypress/e2e/toolTests.js'
         if $toolTestsCommand >> toolTest.log
         then
           cat toolTest.log
