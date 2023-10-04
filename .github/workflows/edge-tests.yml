@@ -12,7 +12,7 @@ jobs:
     name: Run on Edge
     runs-on: ubuntu-latest
     container: 
-      image: cypress/browsers:node14.10.1-edge88
+      image: cypress/browsers:node16.14.0-edge
 
 
     steps:
