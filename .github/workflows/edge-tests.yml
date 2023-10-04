@@ -24,8 +24,6 @@ jobs:
 
     - name: Install a project with a clean slate
       run: |
-        HOME=${pwd()}/cache
-        CYPRESS_CACHE_FOLDER=${pwd()}/cache
         npx ci
         $(npm bin)/cypress cache path
         $(npm bin)/cypress cache list
