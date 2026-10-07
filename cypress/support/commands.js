@@ -14,8 +14,9 @@ Cypress.Commands.add('nakdanLiveRequest',({url,status=200,message='',delaySecond
   //     responseDelay: 160000 // milliseconds
   //   });
   // });
+  // the message is a <small> on the old site (dev) and a <label> on the new one (live)
   if(message.length>0){
-    cy.get('small').contains(message).should('not.exist')
+    cy.contains(message).should('not.exist')
   }
   cy.get('[placeholder="הזן טקסט כאן"]').clear().type('מש')
   
@@ -25,7 +26,7 @@ Cypress.Commands.add('nakdanLiveRequest',({url,status=200,message='',delaySecond
     cy.get('[class*=spinner]').should('not.exist')
   }
   if(message.length>0){
-    cy.get('small').contains(message).should('exist',{ timeout: 1000*delaySeconds })
+    cy.contains(message).should('exist')
   }
 })   
   
